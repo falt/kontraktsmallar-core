@@ -1,0 +1,250 @@
+import type { TemplateField } from "../types";
+
+export const kopekontraktFastighetFields: TemplateField[] = [
+  // Säljare
+  {
+    name: "saljare_namn",
+    label: "Säljarens namn",
+    type: "text",
+    required: true,
+    placeholder: "Förnamn Efternamn",
+    section: "Säljare",
+  },
+  {
+    name: "saljare_personnummer",
+    label: "Personnummer",
+    type: "text",
+    required: true,
+    placeholder: "YYYYMMDD-XXXX",
+    section: "Säljare",
+  },
+  {
+    name: "saljare_adress",
+    label: "Adress",
+    type: "text",
+    required: true,
+    placeholder: "Gatuadress, postnummer, ort",
+    section: "Säljare",
+  },
+  {
+    name: "saljare_telefon",
+    label: "Telefon",
+    type: "phone",
+    required: false,
+    placeholder: "07X-XXX XX XX",
+    section: "Säljare",
+  },
+
+  // Köpare
+  {
+    name: "kopare_namn",
+    label: "Köparens namn",
+    type: "text",
+    required: true,
+    placeholder: "Förnamn Efternamn",
+    section: "Köpare",
+  },
+  {
+    name: "kopare_personnummer",
+    label: "Personnummer",
+    type: "text",
+    required: true,
+    placeholder: "YYYYMMDD-XXXX",
+    section: "Köpare",
+  },
+  {
+    name: "kopare_adress",
+    label: "Adress",
+    type: "text",
+    required: true,
+    placeholder: "Gatuadress, postnummer, ort",
+    section: "Köpare",
+  },
+  {
+    name: "kopare_telefon",
+    label: "Telefon",
+    type: "phone",
+    required: false,
+    placeholder: "07X-XXX XX XX",
+    section: "Köpare",
+  },
+
+  // Fastighet
+  {
+    name: "fastighetsbeteckning",
+    label: "Fastighetsbeteckning",
+    type: "text",
+    required: true,
+    placeholder: "T.ex. Stockholm Södermalm 1:23",
+    section: "Fastigheten",
+  },
+  {
+    name: "fastighet_adress",
+    label: "Fastighetens adress",
+    type: "text",
+    required: true,
+    placeholder: "Gatuadress, postnummer, ort",
+    section: "Fastigheten",
+  },
+  {
+    name: "fastighetstyp",
+    label: "Typ av fastighet",
+    type: "select",
+    required: true,
+    section: "Fastigheten",
+    options: [
+      { value: "villa", label: "Villa" },
+      { value: "radhus", label: "Radhus" },
+      { value: "fritidshus", label: "Fritidshus" },
+      { value: "tomt", label: "Obebyggd tomt" },
+      { value: "lantbruk", label: "Lantbruk" },
+      { value: "annan", label: "Annan" },
+    ],
+  },
+  {
+    name: "areal",
+    label: "Tomtareal (kvm)",
+    type: "number",
+    required: true,
+    placeholder: "800",
+    section: "Fastigheten",
+  },
+  {
+    name: "boarea",
+    label: "Boarea (kvm)",
+    type: "number",
+    required: false,
+    placeholder: "120",
+    section: "Fastigheten",
+  },
+  {
+    name: "byggar",
+    label: "Byggår",
+    type: "number",
+    required: false,
+    placeholder: "1975",
+    section: "Fastigheten",
+  },
+
+  // Köpevillkor
+  {
+    name: "kopeskilling",
+    label: "Köpeskilling (SEK)",
+    type: "number",
+    required: true,
+    placeholder: "3500000",
+    section: "Köpevillkor",
+  },
+  {
+    name: "handpenning",
+    label: "Handpenning (SEK)",
+    type: "number",
+    required: true,
+    placeholder: "350000",
+    section: "Köpevillkor",
+  },
+  {
+    name: "handpenning_datum",
+    label: "Handpenning betalas senast",
+    type: "date",
+    required: true,
+    section: "Köpevillkor",
+  },
+  {
+    name: "slutlikvid_datum",
+    label: "Slutlikvid/Tillträdesdag",
+    type: "date",
+    required: true,
+    section: "Köpevillkor",
+  },
+
+  // Villkor
+  {
+    name: "laneforbehall",
+    label: "Låneförbehåll",
+    type: "select",
+    required: true,
+    section: "Villkor och förbehåll",
+    options: [
+      { value: "ja", label: "Ja - köpet villkorat av lånelöfte" },
+      { value: "nej", label: "Nej" },
+    ],
+  },
+  {
+    name: "laneforbehall_datum",
+    label: "Låneförbehåll gäller till",
+    type: "date",
+    required: false,
+    section: "Villkor och förbehåll",
+  },
+  {
+    name: "besiktningsforbehall",
+    label: "Besiktningsförbehåll",
+    type: "select",
+    required: true,
+    section: "Villkor och förbehåll",
+    options: [
+      { value: "ja", label: "Ja - köpet villkorat av besiktning" },
+      { value: "nej", label: "Nej" },
+    ],
+  },
+  {
+    name: "besiktning_datum",
+    label: "Besiktning ska genomföras senast",
+    type: "date",
+    required: false,
+    section: "Villkor och förbehåll",
+  },
+
+  // Tillbehör och servitut
+  {
+    name: "tillbehor",
+    label: "Tillbehör som ingår",
+    type: "textarea",
+    required: false,
+    placeholder: "T.ex. tvättmaskin, diskmaskin, markiser, utomhusbelysning...",
+    section: "Tillbehör",
+  },
+  {
+    name: "servitut",
+    label: "Kända servitut och nyttjanderätter",
+    type: "textarea",
+    required: false,
+    placeholder: "T.ex. vägservitut, ledningsrätt...",
+    section: "Tillbehör",
+  },
+
+  // Övrigt
+  {
+    name: "standardvillkor",
+    label: "Standardvillkor",
+    type: "textarea",
+    required: false,
+    section: "Övrigt",
+    defaultValue:
+      "Fastigheten överlåts i befintligt skick. Köparen har beretts tillfälle att besiktiga fastigheten och godtar dess skick. Köparen övertar ansvaret för fastigheten från och med tillträdesdagen. Säljaren garanterar att fastigheten inte belastas av andra inteckningar, servitut eller nyttjanderätter än vad som framgår av detta avtal. Lagfart ska sökas av köparen inom tre månader från tillträdet.",
+  },
+  {
+    name: "ovriga_villkor",
+    label: "Övriga villkor",
+    type: "textarea",
+    required: false,
+    placeholder: "Eventuella tilläggsvillkor...",
+    section: "Övrigt",
+  },
+  {
+    name: "ort",
+    label: "Ort",
+    type: "text",
+    required: true,
+    placeholder: "Stockholm",
+    section: "Övrigt",
+  },
+  {
+    name: "datum",
+    label: "Datum",
+    type: "date",
+    required: true,
+    section: "Övrigt",
+  },
+];

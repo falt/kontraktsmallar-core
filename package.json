@@ -1,0 +1,38 @@
+{
+  "name": "kontraktsmallar-core",
+  "version": "1.0.0",
+  "description": "Shared template definitions and PDF generation for Swedish legal document templates",
+  "main": "dist/lib/index.js",
+  "types": "dist/lib/index.d.ts",
+  "files": [
+    "lib/**/*"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "type-check": "tsc --noEmit"
+  },
+  "dependencies": {
+    "zod": "^4.3.6",
+    "pdfkit": "^0.17.2",
+    "@types/pdfkit": "^0.17.4",
+    "uuid": "^13.0.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.6.3",
+    "@types/node": "^20.0.0"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/lib/index.d.ts",
+      "default": "./dist/lib/index.js"
+    },
+    "./client": {
+      "types": "./dist/lib/client.d.ts",
+      "default": "./dist/lib/client.js"
+    }
+  },
+  "keywords": ["templates", "pdf", "contracts", "legal", "documents", "swedish"],
+  "author": "Your Name",
+  "license": "ISC"
+}
