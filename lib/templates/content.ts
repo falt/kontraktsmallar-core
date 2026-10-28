@@ -32,7 +32,7 @@ const content: Record<string, TemplateContent> = {
     ],
     heading: "När behöver du ett köpekontrakt?",
     paragraphs: [
-      "Ett köpekontrakt behövs vid köp och försäljning av lös egendom mellan privatpersoner. Det skyddar både säljare och köpare genom att dokumentera villkoren för affären svart på vitt. Oavsett om det gäller en bil, båt, möbel, elektronik eller annan värdefull egendom är ett skriftligt avtal alltid att rekommendera.",
+      "Ett köpekontrakt, ofta också kallat köpeavtal, behövs vid köp och försäljning av lös egendom mellan privatpersoner. Det skyddar både säljare och köpare genom att dokumentera villkoren för affären svart på vitt. Oavsett om det gäller en bil, båt, möbel, elektronik eller annan värdefull egendom är ett skriftligt avtal alltid att rekommendera.",
       "Köpekontraktet fungerar som ett juridiskt bevis på att en överenskommelse har träffats mellan parterna. Det specificerar exakt vad som sålts, till vilket pris, under vilka villkor och när överlåtelsen sker. Vid eventuella tvister är köpekontraktet det viktigaste bevismedlet.",
       "Vår mall är utformad för svenska förhållanden och följer gängse praxis för köpekontrakt avseende lös egendom. Den innehåller standardvillkor om befintligt skick, betalningsalternativ och utrymme att lägga till egna villkor vid behov.",
     ],
@@ -63,6 +63,8 @@ const content: Record<string, TemplateContent> = {
       },
     ],
     faqs: [
+      { question: "Vad är skillnaden mellan köpeavtal och köpekontrakt?", answer: "Det finns ingen juridisk skillnad. Köpeavtal och köpekontrakt används som synonymer för det skriftliga avtal där köpare och säljare dokumenterar vad som säljs, priset och övriga villkor." },
+      { question: "Kan jag använda mallen för bil eller fastighet?", answer: "Mallen passar för lös egendom i allmänhet. För bil och båt finns särskilda köpekontrakt med fält för fordonsuppgifter. Fastighetsköp har egna formkrav enligt jordabalken och kräver ett köpekontrakt för fastighet." },
       { question: "Är ett köpekontrakt juridiskt bindande?", answer: "Ja, ett köpekontrakt är juridiskt bindande så snart båda parter har undertecknat det. Det regleras av köplagen (1990:931) och fungerar som bevisning vid eventuella tvister." },
       { question: "Vad innebär befintligt skick i ett köpekontrakt?", answer: "Befintligt skick innebär att köparen accepterar föremålet i det skick det är vid köptillfället. Säljaren ansvarar dock fortfarande för dolda fel och för att uppgifterna i kontraktet stämmer." },
       { question: "Behöver ett köpekontrakt bevittnas?", answer: "Nej, ett köpekontrakt för lös egendom behöver inte bevittnas för att vara giltigt. Det räcker med bådas underskrifter. Vittnen kan dock stärka bevisvärdet vid en eventuell tvist." },
@@ -91,9 +93,26 @@ const content: Record<string, TemplateContent> = {
     paragraphs: [
       "Vid köp eller försäljning av bil mellan privatpersoner är ett skriftligt köpekontrakt avgörande. Det dokumenterar fordonets skick, mätarställning och alla överenskomna villkor och skyddar både köpare och säljare vid eventuella tvister.",
       "Varje år säljs hundratusentals begagnade bilar privat i Sverige. Tyvärr uppstår tvister i en betydande andel av dessa affärer, ofta om dolda fel, manipulerade mätare eller oklara betalningsvillkor. Ett väl ifyllt köpekontrakt förebygger de flesta av dessa problem.",
-      "Vår mall är specifikt utformad för privat bilförsäljning i Sverige. Den innehåller alla fordonsrelevanta fält och följer köplagen. Fyll i online och ladda ner som PDF, eller ladda ner en tom mall att fylla i för hand.",
+      "Vår mall är specifikt utformad för privat bilförsäljning i Sverige. Den innehåller alla fordonsrelevanta fält och följer köplagen. Fyll i online och ladda ner som PDF, eller ladda ner en tom mall att fylla i för hand. Vill ni slippa papper kan ni också signera köpekontraktet digitalt med BankID.",
     ],
     sections: [
+      {
+        heading: "Digitalt köpekontrakt för bil – signera med BankID",
+        paragraphs: [
+          "Ett digitalt köpekontrakt för bil fungerar precis som ett på papper. Du fyller i uppgifterna om bilen, säljaren och köparen i formuläret här på sidan, och kontraktet skapas som en PDF som ni kan granska tillsammans innan någon skriver under.",
+          "I stället för att skriva ut och signera för hand kan båda parter signera kontraktet med BankID via signeradokument.se. Det är praktiskt när köpare och säljare inte ses samtidigt, till exempel om bilen hämtas av någon annan eller om affären görs upp på distans. Båda får sedan det signerade dokumentet digitalt.",
+          "Ett köpekontrakt för bil har inga formkrav, så en digital underskrift är lika giltig som en underskrift med penna. BankID gör det dessutom tydligt vem som har skrivit under och när, vilket stärker kontraktets värde som bevis om det uppstår en tvist.",
+          "Tänk på att köpekontraktet inte ersätter ägarbytet. Ägarbytet ska alltid anmälas separat till Transportstyrelsen, för privatpersoner enklast via deras e-tjänst med e-legitimation. Är ett företag inblandat i affären görs anmälan i stället på registreringsbeviset del 2.",
+        ],
+      },
+      {
+        heading: "Köpa bil av privatperson eller företag – vilken lag gäller?",
+        paragraphs: [
+          "Vilka regler som gäller beror på vem du köper bilen av. Köper du bilen av en privatperson gäller köplagen (1990:931). Lagen är dispositiv, vilket betyder att det ni skriver i köpekontraktet i stor utsträckning gäller före lagens regler. Därför är ett tydligt kontrakt extra viktigt vid privata bilköp.",
+          "Köper du som privatperson bil av ett företag, till exempel en bilhandlare, gäller i stället konsumentköplagen (2022:260). Den är tvingande till din fördel: villkor som ger dig sämre rätt än lagen är ogiltiga. Du kan reklamera fel i upp till tre år, och fel som visar sig inom två år från köpet antas som huvudregel ha funnits redan vid köpet.",
+          "Köper ett företag bilen gäller köplagen, oavsett om säljaren är ett annat företag eller en privatperson. Vår mall är utformad för köp mellan privatpersoner. Säljer ett företag bilen till en konsument kan mallen användas för att dokumentera affären, men villkor som strider mot konsumentköplagen gäller inte.",
+        ],
+      },
       {
         heading: "Köplagen vid privat bilförsäljning",
         paragraphs: [
@@ -107,7 +126,7 @@ const content: Record<string, TemplateContent> = {
         paragraphs: [
           "Fyll i fullständiga uppgifter om säljare och köpare: namn, personnummer, adress och telefonnummer. Ange sedan bilens uppgifter: registreringsnummer, chassinummer (VIN), märke, modell, årsmodell, färg och aktuell mätarställning.",
           "Notera besiktningsstatus: är bilen godkänd, och när är nästa besiktning? Ange eventuella kända fel eller brister ärligt. Det skyddar säljaren mot reklamationer på saker köparen kände till.",
-          "Bestäm köpeskilling, betalningssätt och tidpunkt för ägarbytet. Kom ihåg att anmäla ägarbytet till Transportstyrelsen inom tio dagar. Både säljare och köpare bör anmäla för att vara på säkra sidan.",
+          "Bestäm köpeskilling, betalningssätt och tidpunkt för ägarbytet. Anmäl ägarbytet till Transportstyrelsen direkt i samband med affären, så att köparen står som ägare från och med överlåtelsen.",
         ],
       },
       {
@@ -124,9 +143,11 @@ const content: Record<string, TemplateContent> = {
       { question: "Måste jag skriva köpekontrakt vid bilförsäljning?", answer: "Det är inte ett lagkrav, men starkt rekommenderat. Utan köpekontrakt saknar du bevis på köpevillkoren, vilket kan bli problematiskt vid tvister om fordonets skick eller betalning." },
       { question: "Vem ansvarar för dolda fel vid privat bilförsäljning?", answer: "Vid privat försäljning i befintligt skick ansvarar säljaren för dolda fel som fanns vid köptillfället och som inte kunnat upptäckas vid en rimlig undersökning. Köparen har undersökningsplikt." },
       { question: "Ska mätarställningen vara med i köpekontraktet?", answer: "Ja, alltid. Mätarställningen dokumenterar bilens skick vid försäljningen och fungerar som skydd om mätaren skulle manipuleras. Det är dessutom olagligt att manipulera en mätare." },
-      { question: "Kan jag skapa ett digitalt köpekontrakt för bil?", answer: "Ja, ett digitalt köpekontrakt är juridiskt giltigt. Du kan fylla i vår mall online och ladda ner som PDF. Båda parter bör ha varsin kopia av det signerade kontraktet." },
-      { question: "Hur anmäler jag ägarbytet till Transportstyrelsen?", answer: "Både säljare och köpare bör anmäla ägarbytet på Transportstyrelsens webbplats inom tio dagar. Säljaren gör en avregistrering och köparen en registrering. Det kostar inget att anmäla." },
-      { question: "Vad gör jag om det finns skulder på bilen?", answer: "Kontrollera alltid om det finns skulder kopplade till fordonet via Kronofogden. En bil med utmätning eller betalningsanmärkning kan beslagtas. Skriv in i kontraktet att bilen överlåts fri från skulder." },
+      { question: "Kan jag skapa ett digitalt köpekontrakt för bil?", answer: "Ja. Fyll i köpekontraktet online och signera det med BankID via signeradokument.se. Ett digitalt signerat köpekontrakt för bil är lika giltigt som ett på papper, eftersom det inte finns några formkrav. Ägarbytet anmäls fortfarande separat till Transportstyrelsen." },
+      { question: "Är köpeavtal och köpekontrakt för bil samma sak?", answer: "Ja, i praktiken. Köpeavtal, köpekontrakt och köpehandling används ofta som synonymer vid bilaffärer. Det viktiga är att avtalet är skriftligt och beskriver bilen, priset, betalningen och de villkor ni har kommit överens om." },
+      { question: "Gäller samma regler om jag köper bilen av ett företag?", answer: "Nej. Köper du som privatperson bil av en bilhandlare eller annat företag gäller konsumentköplagen, som ger dig ett starkare skydd och inte kan avtalas bort till din nackdel. Vid köp mellan privatpersoner gäller köplagen." },
+      { question: "Hur anmäler jag ägarbytet till Transportstyrelsen?", answer: "Mellan privatpersoner görs ägarbytet enklast i Transportstyrelsens e-tjänst med e-legitimation, gärna direkt när ni gör upp affären. Är ett företag inblandat anmäls ägarbytet på registreringsbeviset del 2. Det kostar inget att anmäla ägarbyte." },
+      { question: "Vad gör jag om det finns skulder på bilen?", answer: "Fråga säljaren om bilen har ett billån, är leasad eller är köpt med äganderättsförbehåll, och kontrollera gärna med Kronofogden om fordonet är utmätt. Skriv in i kontraktet att bilen överlåts fri från skulder och att säljaren har rätt att sälja den." },
       { question: "Behöver köpekontraktet bevittnas?", answer: "Nej, ett köpekontrakt för bil behöver inte bevittnas. Det räcker med att båda parter undertecknar. Vittnen kan dock stärka bevisvärdet om det skulle uppstå en tvist." },
     ],
   },
@@ -194,15 +215,31 @@ const content: Record<string, TemplateContent> = {
     paragraphs: [
       "Köp av fastighet är ofta den största affären i en persons liv. Ett korrekt utformat köpekontrakt är ett absolut juridiskt krav enligt jordabalken 4 kap. 1 § - utan skriftligt avtal är fastighetsköpet ogiltigt.",
       "Köpekontraktet reglerar alla villkor: köpeskilling, handpenning, tillträdesdag, förbehåll och vad som ingår i köpet. Det är grunden för hela affären och det dokument som styr parternas rättigheter och skyldigheter.",
-      "Vår mall innehåller alla nödvändiga uppgifter för ett giltigt fastighetsköpekontrakt. Observera att fastighetsköp ofta kräver juridisk rådgivning - mallen ger en solid grund men bör anpassas efter den specifika affären.",
+      "Vår kostnadsfria mall för köpekontrakt fastighet innehåller de uppgifter som behövs för ett giltigt köp: fastighetsbeteckning, parter, köpeskilling, överlåtelseförklaring och de vanligaste förbehållen. Fyll i online och ladda ner som PDF. Observera att fastighetsköp ofta kräver juridisk rådgivning - mallen ger en solid grund men bör anpassas efter den specifika affären.",
     ],
     sections: [
       {
         heading: "Formkrav enligt jordabalken",
         paragraphs: [
-          "Jordabalken 4 kap. ställer strikta formkrav på fastighetsköp. Köpekontraktet måste vara skriftligt och undertecknat av både köpare och säljare. Det ska innehålla uppgifter om fastigheten (fastighetsbeteckning), köpeskillingen och en överlåtelseförklaring.",
-          "Muntliga avtal om fastighetsköp är helt ogiltiga, liksom villkor som inte tagits med i det skriftliga kontraktet (den så kallade integrationsklausulen). Det innebär att alla villkor måste finnas med i kontraktet - det som inte skrivits ned gäller inte.",
-          "Vid fastighetsköpet upprättas normalt två dokument: köpekontraktet (med alla villkor) och köpebrevet (som bekräftar att betalning skett). Köpebrevet är det dokument som används för att söka lagfart hos Lantmäteriet.",
+          "Jordabalken 4 kap. ställer strikta formkrav på fastighetsköp. Köpet sluts genom en skriftlig köpehandling som skrivs under av både säljare och köpare. Handlingen ska innehålla uppgift om köpeskillingen och en förklaring från säljaren om att fastigheten överlåts på köparen. Fastigheten bör anges med sin fastighetsbeteckning.",
+          "Muntliga avtal om fastighetsköp är ogiltiga. Dessutom gäller vissa villkor bara om de har tagits in i köpehandlingen, till exempel villkor om att köpet ska gå åter, att köpet är beroende av ett villkor (som låne- eller besiktningsförbehåll), inskränkningar i köparens rätt och begränsningar av säljarens ansvar för fel. Skriv därför in alla viktiga villkor i kontraktet.",
+          "Vid ett fastighetsköp upprättas normalt två dokument: köpekontraktet (med alla villkor) och köpebrevet (som bekräftar att köpeskillingen är betald). Köpebrevet är det dokument som brukar användas för att söka lagfart hos Lantmäteriet.",
+        ],
+      },
+      {
+        heading: "Köpekontrakt eller köpebrev – vad är skillnaden?",
+        paragraphs: [
+          "Både köpekontrakt och köpebrev är köpehandlingar enligt jordabalken och måste uppfylla samma formkrav. Skillnaden ligger i när de skrivs och vad de innehåller. Köpekontraktet skrivs när parterna är överens om affären, ofta flera månader före tillträdet. Det innehåller alla villkor: handpenning, tillträdesdag, förbehåll, fastighetstillbehör och hur fel i fastigheten ska hanteras.",
+          "Köpebrevet skrivs på tillträdesdagen när köparen har betalat hela köpeskillingen. Det är ett kort dokument som anger fastighetsbeteckning, parter och köpeskilling, innehåller säljarens kvittens på att köpeskillingen är betald och en överlåtelseförklaring utan villkor. Köpebrevet hänvisar ofta till köpekontraktet för övriga villkor.",
+          "Anledningen till att man använder två dokument är lagfarten. Så länge köpeskillingen inte är betald eller köpet är beroende av ett villkor beviljar Lantmäteriet inte lagfart, utan ärendet blir vilande. Med ett villkorslöst köpebrev kan köparen få lagfart direkt. Om hela köpeskillingen betalas och alla villkor är uppfyllda redan vid kontraktsskrivningen kan det räcka med en enda köpehandling.",
+        ],
+      },
+      {
+        heading: "Lagfart hos Lantmäteriet",
+        paragraphs: [
+          "Lagfart är den officiella registreringen av vem som äger en fastighet. Köparen ska som huvudregel söka lagfart inom tre månader från förvärvet. Ansökan görs hos Lantmäteriet, och köpehandlingen, normalt köpebrevet, skickas in i original.",
+          "När lagfarten beviljas tas stämpelskatt ut. För privatpersoner är den 1,5 % av köpeskillingen eller taxeringsvärdet, beroende på vilket som är högst, och för de flesta juridiska personer 4,25 %. Därtill kommer en expeditionsavgift. Kontrollera aktuella belopp hos Lantmäteriet innan ansökan.",
+          "Lagfarten är viktig för köparen. Den visar vem som äger fastigheten, krävs för att kunna ta ut pantbrev och belåna fastigheten, och ger skydd om säljaren skulle försöka sälja fastigheten till någon annan.",
         ],
       },
       {
@@ -225,8 +262,10 @@ const content: Record<string, TemplateContent> = {
     faqs: [
       { question: "Måste köpekontrakt för fastighet vara skriftligt?", answer: "Ja, det är ett absolut krav enligt jordabalken 4 kap. 1 §. Muntliga avtal om fastighetsköp är ogiltiga. Kontraktet måste vara skriftligt, undertecknat av båda parter och innehålla fastighetsbeteckning, köpeskilling och överlåtelseförklaring." },
       { question: "Vad är skillnaden mellan köpekontrakt och köpebrev?", answer: "Köpekontraktet upprättas först och innehåller alla villkor inklusive förbehåll. Köpebrevet upprättas vid tillträdet och bekräftar att full betalning skett. Köpebrevet används för att söka lagfart hos Lantmäteriet." },
+      { question: "Kan jag söka lagfart med bara köpekontraktet?", answer: "Det går att skicka in köpekontraktet, men innehåller det förbehåll eller är köpeskillingen inte betald blir lagfartsärendet vilande tills villkoren är uppfyllda. Därför skickar köparen normalt in köpebrevet, som visar att köpet är fullbordat." },
+      { question: "Kan mallen användas vid köp av bostadsrätt?", answer: "Nej. En bostadsrätt är inte fast egendom, utan köpet regleras av bostadsrättslagen och kräver ett skriftligt överlåtelseavtal. Lagfart söks inte för bostadsrätter. Mallen är avsedd för fastigheter som villor, fritidshus och tomter." },
       { question: "Vad innebär ett besiktningsförbehåll?", answer: "Ett besiktningsförbehåll ger köparen rätt att besiktiga fastigheten och frånträda köpet om allvarliga brister upptäcks. Förbehållet ska ha en tydlig tidsfrist (vanligen 10-14 dagar) och anges i köpekontraktet." },
-      { question: "Vad kostar lagfart på en fastighet?", answer: "Stämpelskatten för lagfart är 1,5 % av köpeskillingen för privatpersoner och 4,25 % för juridiska personer. Därtill tillkommer en expeditionsavgift på 825 kr till Lantmäteriet." },
+      { question: "Vad kostar lagfart på en fastighet?", answer: "Stämpelskatten för lagfart är 1,5 % för privatpersoner och 4,25 % för de flesta juridiska personer, räknat på köpeskillingen eller taxeringsvärdet beroende på vilket som är högst. Därtill tillkommer en expeditionsavgift på 825 kr till Lantmäteriet." },
       { question: "Vad är handpenning vid fastighetsköp?", answer: "Handpenning är en delbetalning som erläggs vid kontraktsskrivningen, vanligen 10 % av köpeskillingen. Handpenningen visar att köparen är seriös och kan förverkas om köparen drar sig ur utan giltigt förbehåll." },
       { question: "Vem betalar mäklararvode vid fastighetsköp?", answer: "Normalt betalar säljaren mäklararvodet. Vid privat försäljning utan mäklare finns inga mäklarkostnader, men det är extra viktigt att köpekontraktet är korrekt utformat." },
       { question: "Vad ingår som fastighetstillbehör?", answer: "Fastighetstillbehör som ingår per automatik enligt jordabalken inkluderar byggnader, ledningar, stängsel och växtlighet. Byggnadstillbehör som spis, kyl, garderober och markiser ingår också om de inte undantagits i kontraktet." },
@@ -248,11 +287,19 @@ const content: Record<string, TemplateContent> = {
     ],
     heading: "När behöver du ett hyreskontrakt?",
     paragraphs: [
-      "Ett hyreskontrakt behövs varje gång en bostad hyrs ut, oavsett om det gäller en lägenhet, ett hus, ett rum eller en stuga. Kontraktet reglerar rättigheter och skyldigheter för både hyresvärd och hyresgäst och är det viktigaste dokumentet i ett hyresförhållande.",
+      "Ett hyreskontrakt, eller hyresavtal, behövs varje gång en bostad hyrs ut, oavsett om det gäller en lägenhet, ett hus, ett rum eller en stuga. Kontraktet reglerar rättigheter och skyldigheter för både hyresvärd och hyresgäst och är det viktigaste dokumentet i ett hyresförhållande.",
       "Utan ett skriftligt hyreskontrakt saknar båda parter bevis på vad som överenskommits. Det kan leda till kostsamma tvister om hyresbelopp, uppsägningstid, ansvar för skador och andra villkor. Ett tydligt kontrakt förebygger konflikter och ger trygghet.",
-      "Vår hyreskontrakt-mall är anpassad för svenska förhållanden och följer jordabalken 12 kap. (hyreslagen). Den kan användas vid uthyrning av lägenheter, hus, villor, radhus och andra bostäder i hela Sverige.",
+      "Vår hyreskontrakt-mall är gratis och anpassad för svenska förhållanden enligt jordabalken 12 kap. (hyreslagen). Den kan användas vid uthyrning av lägenheter, hus, villor, radhus och andra bostäder i hela Sverige. Fyll i hyresavtalet online och ladda ner det som PDF, eller ladda ner en tom mall att fylla i för hand.",
     ],
     sections: [
+      {
+        heading: "Hyreskontrakt för lägenhet – vilka regler gäller?",
+        paragraphs: [
+          "Vilka regler som gäller när du hyr ut en lägenhet beror på vilken typ av bostad det är. Hyr du ut en bostadsrätt eller ett eget hus som privatperson gäller lagen om uthyrning av egen bostad, som bland annat ger dig rätt att ta ut en hyra som täcker dina kapitalkostnader och driftskostnader.",
+          "Äger du en bostadsrätt behöver du dessutom bostadsrättsföreningens samtycke för att hyra ut lägenheten i andra hand. Får du inte samtycke kan du ansöka om tillstånd hos hyresnämnden. Har du själv ett förstahandskontrakt på en hyresrätt behöver du hyresvärdens samtycke, och då passar ett avtal för andrahandsuthyrning bättre.",
+          "Hyr du ut en lägenhet som en del av en verksamhet, till exempel som fastighetsägare med flera lägenheter, gäller hyreslagen fullt ut. Då får hyresgästen normalt besittningsskydd och hyran ska vara skälig i förhållande till likvärdiga lägenheter.",
+        ],
+      },
       {
         heading: "Vad säger hyreslagen?",
         paragraphs: [
@@ -279,6 +326,7 @@ const content: Record<string, TemplateContent> = {
       },
     ],
     faqs: [
+      { question: "Är hyresavtal och hyreskontrakt samma sak?", answer: "Ja. Hyresavtal och hyreskontrakt betyder samma sak, det vill säga det avtal där hyresvärd och hyresgäst kommer överens om att en bostad hyrs ut och på vilka villkor. Lagen talar om hyresavtal." },
       { question: "Vad ska ett hyreskontrakt innehålla?", answer: "Det ska innehålla uppgifter om hyresvärd och hyresgäst, hyresobjektets adress och beskrivning, hyresbelopp, betalningsdatum, deposition, hyresperiod, uppsägningstid, villkor för underhåll och vad som ingår i hyran." },
       { question: "Hur lång är uppsägningstiden för en hyresgäst?", answer: "En hyresgäst har alltid rätt till tre månaders uppsägningstid vid tillsvidareavtal, oavsett vad kontraktet säger. Vid tidsbestämda avtal upphör hyresförhållandet vid avtalstidens slut utan uppsägning." },
       { question: "Får hyresvärden ta ut deposition?", answer: "Ja, det är vanligt att hyresvärden tar en deposition som säkerhet, vanligen en till tre månadshyror. Depositionen ska återbetalas efter hyrestidens slut, med avdrag för eventuella skador utöver normalt slitage." },
@@ -523,8 +571,21 @@ const content: Record<string, TemplateContent> = {
           "Vid mjukvaruutveckling är det särskilt viktigt att reglera rättigheterna till källkod, databaser och dokumentation. Klargör också vem som äger eventuella verktyg och ramverk som konsulten utvecklat före uppdraget.",
         ],
       },
+      {
+        heading: "Exempel på konsultavtal – typiska klausuler",
+        paragraphs: [
+          "Ett konsultavtal består oftast av samma grundläggande delar, oavsett bransch. Nedan följer exempel på vanliga klausuler och hur de kan formuleras. Exemplen är förenklade och behöver anpassas efter ert uppdrag.",
+          "Uppdrag: 'Konsulten ska utföra utveckling av Uppdragsgivarens webbplats enligt bilaga 1. Konsulten bestämmer själv över arbetets utförande, arbetstider och arbetsplats.' Ju tydligare uppdraget beskrivs, desto lättare är det att avgöra vad som ingår och vad som är tilläggsarbete.",
+          "Arvode och betalning: 'Arvodet är 950 kr per timme exklusive moms. Konsulten fakturerar månadsvis i efterskott. Betalning ska ske inom 30 dagar från fakturadatum.' Vid fast pris anges i stället totalbeloppet och när delbetalningar ska ske, till exempel vid avstämda delleveranser.",
+          "Sekretess: 'Konsulten förbinder sig att inte för tredje man röja konfidentiell information om Uppdragsgivarens verksamhet. Sekretessen gäller under uppdraget och i tre år efter att avtalet har upphört.' Ange gärna vad som räknas som konfidentiell information.",
+          "Immateriella rättigheter: 'Samtliga rättigheter till resultatet av uppdraget, inklusive upphovsrätt, övergår till Uppdragsgivaren när arvodet är betalt. Konsulten behåller rätten till verktyg och metoder som fanns före uppdraget.' Utan en sådan klausul kan konsulten stå kvar som ägare av det som har tagits fram.",
+          "Ansvar och uppsägning: 'Konsultens ansvar för skada är begränsat till det arvode som har betalats under de senaste sex månaderna. Avtalet kan sägas upp av vardera parten med 30 dagars uppsägningstid.' Ansvarsbegränsning och uppsägningstid är punkter som ofta förhandlas, så skriv in det ni faktiskt har kommit överens om.",
+        ],
+      },
     ],
     faqs: [
+      { question: "Finns det exempel på hur ett konsultavtal kan se ut?", answer: "Ja. Ett typiskt konsultavtal innehåller klausuler om uppdrag, arvode, sekretess, immateriella rättigheter, ansvar och uppsägning. Vår mall innehåller samma delar, så du kan fylla i ert konsultavtal online och ladda ner det som PDF." },
+      { question: "Måste ett konsultavtal vara skriftligt?", answer: "Nej, det finns inget formkrav och även muntliga avtal är bindande. Ett skriftligt konsultavtal är ändå starkt att rekommendera, eftersom det är svårt att bevisa vad som avtalats om arvode, leverans och rättigheter om allt är muntligt." },
       { question: "Vad är skillnaden mellan konsultavtal och anställningsavtal?", answer: "En konsult är självständig uppdragstagare med eget företag och ansvarar för egen skatt, moms och försäkring. En anställd har arbetsrättsligt skydd genom LAS, sjuklön och semester." },
       { question: "Vem äger resultatet av konsultuppdraget?", answer: "Det beror på vad som avtalats. Utan avtal äger konsulten normalt de immateriella rättigheterna. Vi rekommenderar att alltid reglera IP-överlåtelse tydligt i konsultavtalet." },
       { question: "Kan ett konsultavtal omklassificeras som anställning?", answer: "Ja, Skatteverket kan omklassificera om konsulten i praktiken arbetar som anställd. Faktorer: arbetsledning, arbetstider, arbetsplats och om konsulten har andra uppdragsgivare." },
@@ -756,7 +817,7 @@ const content: Record<string, TemplateContent> = {
       "Uppgifter om fullmaktsgivare och fullmaktshavare",
       "Vilka angelägenheter fullmakten omfattar",
       "Ekonomiska angelägenheter (bank, fastighet, skatt)",
-      "Personliga angelägenheter (vård, boende, myndigheter)",
+      "Personliga angelägenheter (boende, omsorg, myndigheter)",
       "Ersättningsfullmaktshavare",
       "Villkor för ikraftträdande",
       "Granskning och tillsyn",
@@ -765,9 +826,9 @@ const content: Record<string, TemplateContent> = {
     ],
     heading: "Vad är en framtidsfullmakt?",
     paragraphs: [
-      "En framtidsfullmakt är ett juridiskt dokument som träder i kraft om du på grund av sjukdom, psykisk störning eller liknande inte längre kan ta hand om dina angelägenheter. Det är ett alternativ till god man eller förvaltare och ger dig kontroll över vem som ska företräda dig.",
-      "Framtidsfullmakten regleras av lagen (2017:310) om framtidsfullmakter. Till skillnad från en vanlig fullmakt träder den inte i kraft omedelbart, utan först den dag du inte längre kan hantera dina ärenden.",
-      "Det är ett av de viktigaste juridiska dokumenten du kan upprätta. Med en framtidsfullmakt bestämmer du själv - medan du fortfarande kan - vem som ska sköta din ekonomi och dina personliga angelägenheter i framtiden.",
+      "En framtidsfullmakt är ett juridiskt dokument som träder i kraft om du på grund av sjukdom, psykisk störning, försvagat hälsotillstånd eller liknande varaktigt och i huvudsak inte längre kan ta hand om dina angelägenheter. Det är ett alternativ till god man eller förvaltare och ger dig kontroll över vem som ska företräda dig.",
+      "Framtidsfullmakten regleras av lagen (2017:310) om framtidsfullmakter. Till skillnad från en vanlig fullmakt träder den inte i kraft omedelbart, utan först den dag du inte längre kan hantera de angelägenheter som fullmakten gäller.",
+      "Det är ett av de viktigaste juridiska dokumenten du kan upprätta. Med en framtidsfullmakt bestämmer du själv - medan du fortfarande kan - vem som ska sköta din ekonomi och dina personliga angelägenheter i framtiden. Vår blankett för framtidsfullmakt är gratis: fyll i den online, ladda ner som PDF och skriv under inför två vittnen.",
     ],
     sections: [
       {
@@ -781,19 +842,36 @@ const content: Record<string, TemplateContent> = {
       {
         heading: "Formkrav för giltighet",
         paragraphs: [
-          "En framtidsfullmakt har strikta formkrav: den ska vara skriftlig, undertecknad av fullmaktsgivaren i närvaro av två vittnen, och vittnena ska skriva under med sina namn. Fullmaktsgivaren ska vara 18 år och vid sina sinnens fulla bruk.",
-          "Vittnena måste vara minst 15 år och förstå att de bevittnar en framtidsfullmakt. Fullmaktshavaren, dennes make/maka, sambo, barn eller syskon får inte vara vittne. Inte heller den som står under fullmaktshavarens förmyndarskap.",
-          "Fullmakten ska tydligt ange att det är en framtidsfullmakt, vem som är fullmaktshavare och vilka angelägenheter som omfattas. Vi rekommenderar att du utser en ersättningsfullmaktshavare för det fall den första inte kan eller vill fullgöra uppdraget.",
+          "En framtidsfullmakt har strikta formkrav. Den ska vara skriftlig, och du som fullmaktsgivare ska skriva under den i två vittnens samtidiga närvaro, eller bekräfta inför dem att det är din underskrift. Vittnena ska veta att handlingen är en framtidsfullmakt och bekräfta den med sina underskrifter.",
+          "Du måste ha fyllt 18 år och kunna förstå vad fullmakten innebär när du skriver under den. Fullmaktshavaren får inte vara vittne. I övrigt gäller i stort samma regler som för testamentsvittnen, vilket bland annat innebär att vittnena ska ha fyllt 15 år. Välj gärna två utomstående vittnen som inte är släkt med dig eller fullmaktshavaren, så undviker du att giltigheten kan ifrågasättas.",
+          "Fullmakten ska tydligt ange att det är en framtidsfullmakt, vem som är fullmaktshavare och vilka angelägenheter som omfattas. Fullmaktshavaren måste vara en fysisk person. Vi rekommenderar att du också utser en ersättare för det fall den första fullmaktshavaren inte kan eller vill fullgöra uppdraget.",
+        ],
+      },
+      {
+        heading: "Så fyller du i blanketten för framtidsfullmakt",
+        paragraphs: [
+          "Börja med uppgifter om dig själv som fullmaktsgivare och om den eller de personer du vill utse till fullmaktshavare. Ange namn, personnummer och adress så att det inte råder någon tvekan om vem som avses. Fyll också i uppgifter om eventuell ersättare.",
+          "Bestäm sedan vilka angelägenheter fullmakten ska gälla. Du kan ge en bred fullmakt för både ekonomiska och personliga angelägenheter, eller begränsa den till exempelvis bankärenden, försäljning av bostad eller kontakter med myndigheter. En framtidsfullmakt kan inte omfatta frågor om hälso- och sjukvård eller tandvård, och inte heller frågor av utpräglat personlig karaktär som att gifta sig eller skriva testamente.",
+          "Skriv ut blanketten och skriv under den tillsammans med två vittnen som är närvarande samtidigt. Förvara originalet på ett säkert ställe och berätta för fullmaktshavaren var det finns. Fullmaktshavaren behöver kunna visa upp originalet när fullmakten ska användas.",
+        ],
+      },
+      {
+        heading: "När träder framtidsfullmakten i kraft?",
+        paragraphs: [
+          "Framtidsfullmakten träder i kraft när du inte längre kan ta hand om de angelägenheter som den omfattar. Det är fullmaktshavaren som bedömer när det har inträffat, ofta med stöd av ett läkarintyg. Fullmaktshavaren ska då informera dig och dina närmaste anhöriga om att fullmakten har börjat gälla.",
+          "Om det är oklart, eller om en bank eller myndighet ifrågasätter fullmakten, kan fullmaktshavaren ansöka hos tingsrätten om att pröva om framtidsfullmakten har trätt i kraft. Tingsrätten hämtar då som regel in ett läkarintyg och ger överförmyndaren och dina närstående möjlighet att yttra sig.",
+          "Överförmyndaren har ingen löpande tillsyn som vid god man eller förvaltare. Överförmyndaren kan däremot ingripa om det finns anledning, till exempel begära redovisning eller besluta att fullmakten helt eller delvis inte får användas om fullmaktshavaren missköter uppdraget. Du kan också i fullmakten utse en person som har rätt att granska fullmaktshavarens arbete.",
         ],
       },
     ],
     faqs: [
-      { question: "Vad är skillnaden mellan fullmakt och framtidsfullmakt?", answer: "En vanlig fullmakt gäller omedelbart och upphör om du förlorar din beslutsförmåga. En framtidsfullmakt träder i kraft först när du inte längre kan ta hand om dina angelägenheter." },
-      { question: "Vem kan vara vittne till en framtidsfullmakt?", answer: "Vittnena måste vara minst 15 år och förstå vad de bevittnar. Fullmaktshavaren och dennes närstående (make, sambo, barn, syskon) får inte vara vittnen." },
-      { question: "Kan en framtidsfullmakt återkallas?", answer: "Ja, så länge du har din beslutsförmåga kan du återkalla framtidsfullmakten. Återkallelsen bör ske skriftligt. När fullmakten väl trätt i kraft kan den bara upphävas av domstol." },
-      { question: "Vem bestämmer när framtidsfullmakten träder i kraft?", answer: "Fullmaktshavaren bedömer när du inte längre kan sköta dina angelägenheter. Fullmaktshavaren kan också begära att tingsrätten prövar frågan formellt." },
-      { question: "Behöver framtidsfullmakten registreras?", answer: "Nej, en framtidsfullmakt behöver inte registreras hos någon myndighet. Förvara originalet säkert och informera fullmaktshavaren om var det finns." },
-      { question: "Kan jag ha flera fullmaktshavare?", answer: "Ja, du kan utse flera fullmaktshavare som agerar tillsammans eller var för sig. Vi rekommenderar att också utse en ersättningsfullmaktshavare som backup." },
+      { question: "Vad är skillnaden mellan fullmakt och framtidsfullmakt?", answer: "En vanlig fullmakt gäller direkt, och det är osäkert om den fortsätter att gälla när du inte längre kan ta hand om dina angelägenheter. En framtidsfullmakt är gjord för just den situationen och träder i kraft först när du inte längre kan sköta det som fullmakten omfattar." },
+      { question: "Finns det en blankett för framtidsfullmakt?", answer: "Det finns ingen blankett som måste användas, men du kan använda vår gratis mall. Fyll i blanketten online, ladda ner den som PDF och skriv under i två vittnens samtidiga närvaro. Det viktiga är att formkraven i lagen om framtidsfullmakter uppfylls." },
+      { question: "Vem kan vara vittne till en framtidsfullmakt?", answer: "Vittnena ska ha fyllt 15 år och veta att de bevittnar en framtidsfullmakt. Fullmaktshavaren får inte vara vittne. Det säkraste är att välja två utomstående vittnen som inte är släkt med dig eller fullmaktshavaren." },
+      { question: "Kan en framtidsfullmakt återkallas?", answer: "Ja, så länge du kan förstå vad det innebär kan du återkalla framtidsfullmakten. Gör det skriftligt och se till att få tillbaka originalet från fullmaktshavaren. Har fullmakten trätt i kraft kan överförmyndaren besluta att den inte får användas om fullmaktshavaren missköter uppdraget." },
+      { question: "Vem bestämmer när framtidsfullmakten träder i kraft?", answer: "Fullmaktshavaren bedömer när du inte längre kan sköta dina angelägenheter. Fullmaktshavaren kan också ansöka hos tingsrätten om att pröva om fullmakten har trätt i kraft, vilket kan underlätta kontakter med banker och myndigheter." },
+      { question: "Behöver framtidsfullmakten registreras?", answer: "Nej, i dag finns inget register för framtidsfullmakter. Förvara originalet säkert och informera fullmaktshavaren om var det finns." },
+      { question: "Kan jag ha flera fullmaktshavare?", answer: "Ja, du kan utse flera fullmaktshavare som agerar tillsammans eller var för sig. Vi rekommenderar att också utse en ersättare som kan ta över om fullmaktshavaren inte kan fullgöra uppdraget." },
     ],
   },
 

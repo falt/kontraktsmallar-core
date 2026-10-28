@@ -66,9 +66,9 @@ registerTemplate({
   fields: kopekontraktFields,
   schema: kopekontraktSchema,
   htmlTemplate: kopekontraktHtml,
-  seoTitle: "Köpekontrakt Mall - Gratis PDF",
+  seoTitle: "Köpekontrakt mall gratis – köpeavtal för lös egendom",
   seoDescription:
-    "Ladda ner gratis köpekontrakt mall som PDF. Fyll i online och skapa ett professionellt köpekontrakt för bil, båt, möbler eller annan lös egendom.",
+    "Gratis köpekontrakt och köpeavtal för lös egendom mellan privatpersoner – möbler, elektronik, cykel m.m. Fyll i online och ladda ner som PDF på några minuter.",
 });
 
 registerTemplate({
@@ -80,9 +80,9 @@ registerTemplate({
   fields: kopekontraktBilFields,
   schema: kopekontraktBilSchema,
   htmlTemplate: "",
-  seoTitle: "Köpekontrakt Bil Mall - Gratis PDF",
+  seoTitle: "Köpekontrakt bil – gratis PDF eller digitalt med BankID",
   seoDescription:
-    "Gratis köpekontrakt för bil. Fyll i uppgifter om fordon, säljare och köpare online. Ladda ner som PDF direkt.",
+    "Enkelt köpekontrakt för bil mellan privatpersoner. Ladda ner gratis som PDF eller fyll i online och signera digitalt med BankID. Klart på några minuter.",
 });
 
 registerTemplate({
@@ -108,9 +108,9 @@ registerTemplate({
   fields: kopekontraktFastighetFields,
   schema: kopekontraktFastighetSchema,
   htmlTemplate: "",
-  seoTitle: "Köpekontrakt Fastighet Mall - Gratis PDF",
+  seoTitle: "Köpekontrakt fastighet mall – gratis PDF, köpebrev & lagfart",
   seoDescription:
-    "Gratis köpekontrakt för fastighet. Skapa ett komplett köpekontrakt med handpenning, förbehåll och tillträdesdag.",
+    "Gratis köpekontrakt för fastighet som mall och PDF, med handpenning och förbehåll. Lär dig skillnaden mot köpebrev och vad Lantmäteriet kräver för lagfart.",
 });
 
 // === BOSTAD ===
@@ -124,9 +124,9 @@ registerTemplate({
   fields: hyreskontraktFields,
   schema: hyreskontraktSchema,
   htmlTemplate: "",
-  seoTitle: "Hyreskontrakt Mall - Gratis PDF",
+  seoTitle: "Hyreskontrakt mall gratis – hyresavtal för lägenhet (PDF)",
   seoDescription:
-    "Ladda ner gratis hyreskontrakt mall. Skapa ett juridiskt korrekt hyresavtal med alla nödvändiga villkor för uthyrning av bostad.",
+    "Gratis hyreskontrakt och hyresavtal för lägenhet eller hus. Fyll i online med hyra, deposition och uppsägningstid och ladda ner som PDF direkt.",
 });
 
 registerTemplate({
@@ -196,9 +196,9 @@ registerTemplate({
   fields: konsultavtalFields,
   schema: konsultavtalSchema,
   htmlTemplate: "",
-  seoTitle: "Konsultavtal Mall - Gratis PDF",
+  seoTitle: "Konsultavtal mall & exempel – gratis PDF",
   seoDescription:
-    "Gratis konsultavtal mall. Skapa ett professionellt konsultavtal med arvode, sekretess och IP-rättigheter.",
+    "Gratis konsultavtal som mall och PDF, med exempel på klausuler för arvode, sekretess och immateriella rättigheter. Fyll i online och signera digitalt.",
 });
 
 registerTemplate({
@@ -268,9 +268,9 @@ registerTemplate({
   fields: framtidsfullmaktFields,
   schema: framtidsfullmaktSchema,
   htmlTemplate: "",
-  seoTitle: "Framtidsfullmakt Mall - Gratis PDF",
+  seoTitle: "Framtidsfullmakt mall & blankett – gratis PDF",
   seoDescription:
-    "Gratis framtidsfullmakt mall. Bestäm vem som ska ta hand om dina ärenden om du inte kan det själv.",
+    "Gratis framtidsfullmakt som blankett och PDF. Fyll i online och få en framtidsfullmakt anpassad efter lag (2017:310), med vittnesrader och ersättare.",
 });
 
 registerTemplate({
